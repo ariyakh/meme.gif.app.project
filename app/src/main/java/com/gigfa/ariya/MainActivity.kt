@@ -227,7 +227,7 @@ class MainActivity : AppCompatActivity() {
 
 
         } else {
-            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "از IP خارجی استفاده نمایید"
+            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "(از IP خارجی استفاده نمایید)"
             showMessageBox(toastText)
             //Toast.makeText(this, toastText, Toast.LENGTH_LONG).show()
         }
@@ -243,7 +243,7 @@ class MainActivity : AppCompatActivity() {
 
 
         } else {
-            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "از IP خارجی استفاده نمایید"
+            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "(از IP خارجی استفاده نمایید)"
             showMessageBox(toastText)
             //Toast.makeText(this, toastText, Toast.LENGTH_LONG).show()
         }
@@ -261,7 +261,7 @@ class MainActivity : AppCompatActivity() {
             searchInitRecycler()
 
         } else {
-            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "از IP خارجی استفاده نمایید"
+            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "(از IP خارجی استفاده نمایید)"
             showMessageBox(toastText)
             //Toast.makeText(this, toastText, Toast.LENGTH_LONG).show()
         }
