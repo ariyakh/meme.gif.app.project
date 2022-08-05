@@ -15,7 +15,7 @@
         android:drawableRight="@drawable/ic_search"
         android:drawablePadding="10dp"
         android:fontFamily="@font/koodak"
-        android:hint="جستجو"
+        android:hint="جستجو انگلیسی"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:singleLine="true"
