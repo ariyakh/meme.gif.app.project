@@ -51,18 +51,18 @@ class SearchAdapter(private val context: Context) :
 
             val thatNumber = randomNumber()
 
-            val request = DownloadManager.Request(Uri.parse(searchs.images.original.url))
+            val request = DownloadManager.Request(Uri.parse(searchs.images.original.mp4))
                 .setTitle("Gif")
                 .setDescription("Downloading ...")
                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
                 .setAllowedOverMetered(true)
                 .setAllowedOverRoaming(false)
                 .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
-                    File.separator + "Ariya Gif " + "$$thatNumber" + ".gif")
+                    File.separator + "Ariya Gif " + "$$thatNumber" + ".mp4")
 
             val dm = context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
             dm.enqueue(request)
-            Toast.makeText(context, "Download Started in download folder!", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "دانلود آغاز شد ...", Toast.LENGTH_LONG).show()
 
         }
 

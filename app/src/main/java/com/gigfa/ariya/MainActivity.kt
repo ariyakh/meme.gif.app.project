@@ -1,5 +1,7 @@
 package com.gigfa.ariya
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -84,6 +86,29 @@ class MainActivity : AppCompatActivity() {
             }
             false
         })
+
+
+        if (!isKnown()) {
+            val messageText =
+                "به برنامه جستجوی گیف تلگرام خوش آمدید." + "\n" + "با کلیک بر روی هر گیف فایل mp4 در پوشه Download دانلود می شود."
+            showMessageBox(messageText)
+
+            val shPref = getSharedPreferences("userData", Context.MODE_PRIVATE)
+            val sEdit: SharedPreferences.Editor = shPref.edit()
+            sEdit.putBoolean("isKnown", true)
+            sEdit.apply()
+
+        }
+
+
+    }
+
+    private fun isKnown(): Boolean {
+        val shPref = this.applicationContext.getSharedPreferences(
+            "userData",
+            Context.MODE_PRIVATE
+        )
+        return shPref.getBoolean("isKnown", false)
     }
 
     private fun initialView() {
