@@ -32,7 +32,7 @@ import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
-    val values = arrayOf("select number loaded", "5", "10", "20", "30", "40", "50", "60")
+    val values = arrayOf("انتخاب محدودیت تعداد نمایش", "5", "10", "20", "30", "40", "50", "60")
 
     private var trendAdapter: TrendingAdapter? = null
     private var searchAdapter: SearchAdapter? = null
@@ -227,7 +227,7 @@ class MainActivity : AppCompatActivity() {
 
 
         } else {
-            val toastText = "Please check your internet connection."
+            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "از IP خارجی استفاده نمایید"
             showMessageBox(toastText)
             //Toast.makeText(this, toastText, Toast.LENGTH_LONG).show()
         }
@@ -243,7 +243,7 @@ class MainActivity : AppCompatActivity() {
 
 
         } else {
-            val toastText = "Please check your internet connection."
+            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "از IP خارجی استفاده نمایید"
             showMessageBox(toastText)
             //Toast.makeText(this, toastText, Toast.LENGTH_LONG).show()
         }
@@ -261,7 +261,7 @@ class MainActivity : AppCompatActivity() {
             searchInitRecycler()
 
         } else {
-            val toastText = "Please check your internet connection."
+            val toastText = "اینترنت خود را بررسی کنید." + "\n" + "از IP خارجی استفاده نمایید"
             showMessageBox(toastText)
             //Toast.makeText(this, toastText, Toast.LENGTH_LONG).show()
         }
