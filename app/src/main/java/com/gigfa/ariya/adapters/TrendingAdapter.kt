@@ -1,11 +1,9 @@
 package com.gigfa.ariya.adapters
 
-import android.R
 import android.annotation.SuppressLint
 import android.app.DownloadManager
 import android.content.Context
 import android.content.Context.DOWNLOAD_SERVICE
-import android.graphics.Color
 import android.net.Uri
 import android.os.Environment
 import android.view.LayoutInflater
